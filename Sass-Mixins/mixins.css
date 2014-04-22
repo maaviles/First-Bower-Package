@@ -1,0 +1,6 @@
+.myclass {
+  background: rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.9); }
+
+.box {
+  box-shadow: white(0.8) 0 1px 0, inset black(0.05) 0 1px 0; }

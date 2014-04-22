@@ -1,0 +1,24 @@
+// Black & White Opacity Mixin
+@function blackOp($opacity) {
+  @return rgba(0, 0, 0, $opacity);
+}
+@function whiteOp($opacity) {
+  @return rgba(255, 255, 255, $opacity);
+}
+  //ex
+.myclass {
+  background: blackOp(0.15);
+  color: whiteOp(0.9);
+}
+
+//Emboss & Letterpress Mixin
+@mixin box-emboss($opacity1, $opacity2) {
+  box-shadow: white($opacity1) 0 1px 0,
+  inset black($opacity2) 0 1px 0;
+}
+  //ex
+.box {
+  @include box-emboss(0.8, 0.05);
+}
+
+
